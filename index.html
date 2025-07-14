@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Learning Dev</title>
+</head>
+<body>
+    <!-- Landing page -->
+
+    <div class="landing-page-container">
+        <div class="landing-page-menu-bar">
+            <h1 class="logo">learning <span>Dev</span></h1> 
+
+            <!-- Hamburger menu for mobil devices -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-navigation mobile-sidebar" id="mobileSidebar">
+                <a href="#" class="menu">Home</a>
+                <a href="#" class="menu">Courses</a>
+                <a href="#" class="menu">Leetcode</a>
+                <a href="#" class="menu">System Design</a>
+                <a href="#" class="menu">Database</a>
+                <a href="#" class="menu">Templates</a>
+            </div>
+
+            <a href="#" class="log-in"><i class="fa-solid fa-user"></i></a>
+        </div>
+
+        <div class="landing-page-details">
+            <h1>Crack Coding Interviews. Get Hired Faster.</h1>
+            <p>Access curated Leetcode problem packs, job-ready cheat sheets, and fast-track interview guides — built by developers, for developers.</p>
+        </div>
+    </div>
+
+    <!-- Product features -->
+
+    <div class="product-features">
+        <h1>Everything You Need to Ace Your Next Tech Interview</h1>
+        <p>Curated content for every stage of your interview prep journey — clean, focused, and proven to work.</p>
+
+        <div class="product-features-content">
+            <div class="products leetcode">
+                <h2>Leetcode Problem Packs</h2>
+                <p>Covers Easy to Hard with explanations</p>
+                <button class="btn">Preview</button>
+            </div>
+
+            <div class="products cheat-sheets">
+                <h2>Cheat Sheets</h2>
+                <p>JavaScript, DSA, System Design, Databases</p>
+                <button class="btn">Preview</button>
+            </div>
+
+            <div class="products inerview">
+                <h2>Interview Prep</h2>
+                <p>HR, tech rounds, behavioral + STAR method</p>
+                <button class="btn">Preview</button>
+            </div>
+
+            <div class="products courses">
+                <h2>Mini Courses</h2>
+                <p>JS fundamentals, System Design, Resume tips</p>
+                <button class="btn">Preview</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- How it works -->
+
+<section class="how-it-works">
+  <h2>How It Works — From Scroll to Skill</h2>
+  <div class="steps-grid">
+    <div class="step">
+      <i class="fa-solid fa-layer-group"></i>
+      <h3>1. Browse & Select</h3>
+      <p>Pick packs by topic — DSA, JS, System Design & more.</p>
+    </div>
+    <div class="step">
+      <i class="fa-solid fa-credit-card"></i>
+      <h3>2. Instant Purchase</h3>
+      <p>Fast checkout. One-time payment. No subscription.</p>
+    </div>
+    <div class="step">
+      <i class="fa-solid fa-unlock"></i>
+      <h3>3. Access Instantly</h3>
+      <p>Start learning right away. Lifetime access.</p>
+    </div>
+    <div class="step">
+      <i class="fa-solid fa-rocket"></i>
+      <h3>4. Crack the Interview</h3>
+      <p>Apply what you learned. Land your dream job faster.</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Why choose us -->
+
+    <section class="why-choose-us">
+        <h2>Why Developers Trust Learning Dev</h2>
+        <div class="reasons-grid">
+            <div class="reason">
+                <i class="fa-solid fa-code"></i>
+                <p>Built by devs who’ve cracked top interviews</p>
+            </div>
+
+            <div class="reason">
+                <i class="fa-solid fa-bolt"></i>
+                <p>Clean and fast-learning format</p>
+            </div>
+
+            <div class="reason">
+                <i class="fa-solid fa-infinity"></i>
+                <p>Lifetime access + updates</p>
+            </div>
+
+            <div class="reason">
+                <i class="fa-solid fa-lock"></i>
+                <p>Learn offline, no account lockdowns</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+
+<section class="testimonial-block">
+  <div class="testimonial-inner">
+    <p class="main-quote">
+      “This platform literally made me skip weeks of useless prep. The Leetcode packs are tight, focused, and interview-worthy.”
+    </p>
+
+    <div class="author-section">
+      <img src="https://i.pravatar.cc/100?img=36" alt="user avatar">
+      <div class="author-info">
+        <h4>Aditya R.</h4>
+        <p>Software Developer @ Remote Startup</p>
+      </div>
+    </div>  
+
+  </div>
+
+</section>
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+  function toggleMenu() {
+    const sidebar = document.getElementById('mobileSidebar');
+    sidebar.classList.toggle('show');
+  }
+</script>
+</body>
+</html>
